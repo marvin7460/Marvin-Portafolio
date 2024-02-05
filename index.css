@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-family: 'Rock Salt', cursive;
+    background-color: #333333;
+}
+
+header {
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5%;
+    height: 15%;
+    width: 100%;
+    max-width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1a1a1a;
+    box-sizing: border-box;
+    z-index: 1000;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+}
+
+nav img {
+    max-width: 300%; /* Ajustado para que la imagen no aumente sus dimensiones */
+    max-height: 300%;
+    object-fit: contain;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2.5%;
+}
+
+nav ul li:first-child {
+    margin-left: 50px;
+}
+
+/* Efecto de barra de neón */
+nav::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1.5vw; /* Utiliza vw para hacerlo proporcional al ancho de la pantalla */
+    background: linear-gradient(to right, #1a1a1a, #9400D3);
+    opacity: 0.8;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+header .centrar {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido del header */
+    height: 35vh;
+    margin: 0;
+}
+
+header .centrar .img-principal {
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    background: linear-gradient(to right, #1a1a1a, #9400D3);
+    opacity: 0.8;
+}
+
+header .centrar .header-content {
+    color: #9400D3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5%;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2.5%;
+    color: #9400D3;
+    z-index: 1;
+    background-color: #1a1a1a;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+}
+
+.brands img {
+    width: 20%;
+    height: 20%;
+    object-fit: contain;
+    margin: 2.5%;
+}
+
+.brands .brands-content {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Efecto de barra de neón para la sección brands */
+.brands::before {
+    content: '';
+    position: absolute;
+    top: 99%;
+    left: 0;
+    width: 100%;
+    height: 1.5vw; /* Utiliza vw para hacerlo proporcional al ancho de la pantalla */
+    background: linear-gradient(to right, #1a1a1a, #9400D3);
+    opacity: 0.8;
+    z-index: -1;
+    transform: translateY(-50%);
+    border-radius: 0 0 20px 20px;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2.5%;
+    z-index: 0;
+    color: #9400D3;
+    background-color: #999999;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    object-fit: contain;
+    
+}
+
+.skills .skills-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.skills .skills-content p{
+    background-color: rgb(216, 231, 231);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+    contain: content;
+    border-radius: 25px;
+    background-color: azure;
+    width: 30%; /* Ajusta según tus necesidades */
+    height: 200px;
+    margin: 10px; /* Ajusta el margen entre elementos según tus necesidades */
+}  
+
+.skills img{
+    width: 50%;
+    height: 50%;
+}
+.skills h2{
+    font-size: 1.5em;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 25px;
+    background-color: azure;
+}
+
+/* Consulta de medios para ajustar estilos en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    header {
+       margin-top: 30%;
+    }
+    nav img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .brands::before {
+        height: 1vw; /* Ajusta la altura de la barra de neón en pantallas más pequeñas */
+    }
+    .skills{
+        height: 1000px;
+    }
+}
