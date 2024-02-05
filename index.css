@@ -28,22 +28,68 @@ nav {
 }
 
 nav img {
-    max-width: 300%; /* Ajustado para que la imagen no aumente sus dimensiones */
-    max-height: 300%;
+    max-width: 150px; /* Ajustado para que la imagen no aumente sus dimensiones */
+    max-height: 150px;
     object-fit: contain;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+    
+}
+/* Estilos de los botones del menú */
+nav ul li {
+    padding: 5px;
+    border-radius: 25px;
+    background-color: #1a1a1a;
+    color: #9400D3;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: .3s;
+}
+/* Efecto de hover para los botones del menú */
+nav ul li:hover {
+    background-color: #9400D3;
+    color: #000;
+}
+/* Estilos de los enlaces del menú */
+nav a {
+    text-decoration: none;
+    color: #9400D3;
+}
+/* Efecto de hover para los enlaces del menú */
+nav a:hover {
+    color: #1a1a1a;
 }
 
+
+/*agrandae la letra de los ul y quitar el subrallado*/
+nav ul li a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #9400D3;
+}
+/*hacer  hover del link*/
+nav ul li a:hover {
+    color: #9400D3;
+    text-decoration: underline;
+}
+
+
+
 nav ul li {
-    margin-left: 2.5%;
+    padding: 10px;
 }
 
 nav ul li:first-child {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 /* Efecto de barra de neón */
@@ -74,6 +120,14 @@ header .centrar .img-principal {
     border-radius: 20px;
     background: linear-gradient(to right, #1a1a1a, #9400D3);
     opacity: 0.8;
+    height: 250px;
+
+}
+/*centrar las svg del heder*/
+header .centrar .img-principal svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 header .centrar .header-content {
@@ -183,6 +237,119 @@ header .centrar .header-content {
     border-radius: 25px;
     background-color: azure;
 }
+/*barra de neón para la seccion de skills*/
+.skills::before {
+    content: '';
+    position: absolute;
+    top: 99%;
+    left: 0;
+    width: 100%;
+    height: 1.8vw; /* Utiliza vw para hacerlo proporcional al ancho de la pantalla */
+    background: linear-gradient(to right, #1a1a1a, #9400D3);
+    opacity: 1;
+    z-index: -1;
+    transform: translateY(-50%);
+    border-radius: 0 0 20px 20px;
+}
+
+
+
+/*hacer lo mismo para la secion de works*/
+.works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2.5%;
+    z-index: 0;
+    margin-top: 50px;
+    color: #9400D3;
+    background-color: #999999;
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+    object-fit: contain;
+    
+}
+@media (min-width: 768px) {
+    .works .works-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 65vh;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .works .works-content p{
+        background-color: rgb(216, 231, 231);
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 4%;
+        contain: content;
+        border-radius: 25px;
+        background-color: azure;
+        width: 30%; /* Ajusta según tus necesidades */
+        height: 200px;
+        margin: 10px; /* Ajusta el margen entre elementos según tus necesidades */
+    }  
+    
+    .works img{
+        width: 50%;
+        height: 50%;
+    }
+    .works h2{
+        font-size: 1.5em;
+        margin: 12px;
+        padding: 12px;
+        border-radius: 25px;
+        background-color: azure;
+    }
+    /*barra de neón para la seccion de works*/
+    .works::before {
+        content: '';
+        position: absolute;
+        top: 99%;
+        left: 0;
+        width: 100%;
+        height: 1.8vw; /* Utiliza vw para hacerlo proporcional al ancho de la pantalla */
+        background: linear-gradient(to right, #1a1a1a, #9400D3);
+        opacity: 1;
+        z-index: -1;
+        transform: translateY(-50%);
+        border-radius: 0 0 20px 20px;
+    }
+}
+/*hacer lo mismo para la secion de contact*/
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2.5%;
+    z-index: 0;
+    margin-top: 50px;
+    color: #9400D3;
+    background-color: #999999;
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+    object-fit: contain;
+    
+}
+
+/*hacer lo que en brands para coments*/
+
+
+
 
 /* Consulta de medios para ajustar estilos en pantallas más pequeñas */
 @media screen and (max-width: 768px) {
@@ -190,10 +357,39 @@ header .centrar .header-content {
        margin-top: 30%;
     }
     nav img {
-        width: 100%;
-        height: 100%;
+        width: 150px;
+        height: 150px;
         object-fit: contain;
     }
+    nav ul {
+        width: 50%;
+        flex-wrap: flex;
+        justify-content: space-around;
+    }
+    /* hacer que los ul se contengan en el nav */
+    nav ul li {
+        padding: 5px;
+        font-size: .4em;
+    }
+    /*centrar la clase centrar del heder*/
+
+    header .centrar {
+        margin-bottom: 15%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*hacer la letra mas chica*/
+        font-size: .7em;
+
+    }
+    /*hacer la img del heder mas chica*/
+    header .centrar .img-principal {
+        width: 150px;
+        height: 150px;
+    }
+    
 
     .brands::before {
         height: 1vw; /* Ajusta la altura de la barra de neón en pantallas más pequeñas */
