@@ -1,151 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvin</title>
-    <link rel="preload" href="index.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-    <link rel="icon" href="./src/imgs/logo blanco.png" type="image/x-icon">
-</head>
-<body>
-    <nav>
-        <img src="src\imgs\logo blanco.png" alt="logo">
-        <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Works</a></li>
-            <li><a href="">Contact</a></li>
-    </nav>
-    <header>
-        <div class="centrar">
-            <div class="header-content">
-                <h2>Hi, I'm <span>Marvin</span></h2>
-                <p>FullStack Developer</p>
-                <a href="">Contact Me</a>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Marvin</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Computer Ingenier</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="py-5">
+                <div class="container px-5 pb-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-xxl-5">
+                            <!-- Header text content-->
+                            <div class="text-center text-xxl-start">
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Design &middot; Development &middot; Marketing</div></div>
+                                <div class="fs-3 fw-light text-muted">I can help your business to</div>
+                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Get online and grow fast</span></h1>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
+                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-7">
+                            <!-- Header profile picture-->
+                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                                <div class="profile bg-gradient-primary-to-secondary">
+                                    <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
+                                    <!-- Watch a tutorial on how to do this on YouTube (link)-->
+                                    <img class="profile-img" src="assets/profile.png" alt="..." />
+                                    <div class="dots-1">
+                                        <!-- SVG Dots-->
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
+                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
+                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
+                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
+                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
+                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
+                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
+                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
+                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
+                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
+                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
+                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
+                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
+                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
+                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
+                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
+                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
+                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
+                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
+                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
+                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
+                                            </g>
+                                        </svg>
+                                        <!-- END of SVG dots-->
+                                    </div>
+                                    <div class="dots-2">
+                                        <!-- SVG Dots-->
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
+                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
+                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
+                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
+                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
+                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
+                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
+                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
+                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
+                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
+                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
+                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
+                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
+                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
+                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
+                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
+                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
+                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
+                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
+                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
+                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
+                                            </g>
+                                        </svg>
+                                        <!-- END of SVG dots-->
+                                    </div>
+                                    <div class="dots-3">
+                                        <!-- SVG Dots-->
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
+                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
+                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
+                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
+                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
+                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
+                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
+                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
+                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
+                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
+                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
+                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
+                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
+                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
+                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
+                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
+                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
+                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
+                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
+                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
+                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
+                                            </g>
+                                        </svg>
+                                        <!-- END of SVG dots-->
+                                    </div>
+                                    <div class="dots-4">
+                                        <!-- SVG Dots-->
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
+                                            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                                                <path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z"></path>
+                                                <path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"></path>
+                                                <path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z"></path>
+                                                <path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"></path>
+                                                <path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z"></path>
+                                                <path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"></path>
+                                                <path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z"></path>
+                                                <path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"></path>
+                                                <path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z"></path>
+                                                <path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"></path>
+                                                <path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z"></path>
+                                                <path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"></path>
+                                                <path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z"></path>
+                                                <path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"></path>
+                                                <path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z"></path>
+                                                <path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"></path>
+                                                <path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z"></path>
+                                                <path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"></path>
+                                                <path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z"></path>
+                                                <path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"></path>
+                                            </g>
+                                        </svg>
+                                        <!-- END of SVG dots-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- About Section-->
+            <section class="bg-light py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-xxl-8">
+                            <div class="text-center my-5">
+                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
+                                <p class="lead fw-light mb-4">My name is Marvin Lujan and I'm a passionate web developer.</p>
+                                <p class="text-muted">"committed to helping brands thrive online. With expertise in both design and coding, I specialize in creating captivating and functional websites that drive results. Let's work together to elevate your online presence!"</p>
+                                <div class="d-flex justify-content-center fs-2 gap-4">
+                                    <a class="text-gradient" href="#!"><i class="bi bi-instagram"></i></a>
+                                    <a class="text-gradient" href="https://www.linkedin.com/in/marvin-lujan-587b912b0/"><i class="bi bi-linkedin"></i></a>
+                                    <a class="text-gradient" href="https://github.com/marvin7460"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; portafolio 2023</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div>
+                </div>
             </div>
-            <div class="img-principal">
-                <svg width="295" height="221" viewBox="0 0 295 221" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="295" height="221" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_11_6" transform="matrix(0.0015625 0 0 0.00208569 0 -0.000565611)"/>
-                    </pattern>
-                    <image id="image0_11_6" width="640" height="480" xlink:href="data:image/png;base64,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RgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAjmX15wUkoPq6raqapqu6qqzTkOyJeqqs4a3nae38uCpJROZrzns/I+aOKm33VW13XT+wPgFt9dXl46NoGllHLwG1dV9SD6saCzXtd1feDlAWiPABhYSmmrqqo/ox8HeuFFXdeHXiqAdpgDGJsPVPpCBRCgRQJgUKX69zz6caA3HqSUtr1cAO0QAOPaiX4AACAqARAAIBgBEAAgGAEQ6Au9IgFaIgACfSEAArREAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAI5l9e8LBOoh8Aesd7FqAl311eXjqWAACBGAIGAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAAhGAAQACEYABAAIRgAEAIikqqr/BVa3w5aXmrirAAAAAElFTkSuQmCC"/>
-                </defs>
-                </svg> 
-            </div>           
-            <div class="fondo">
-            </div>
-        </div>
-    </header>
-    <section class="brands">
-        <h2>Brands</h2>
-        <div class="brands-content">
-            <div class="brand">
-                <img src="" alt="brand">
-            </div>
-            <div class="brand">
-                <img src="" alt="brand">
-            </div>
-            <div class="brand">
-                <img src="" alt="brand">
-            </div>
-        </div>
-    </section>
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="skills-content">
-            <div class="skill">
-                <img src="src\iconos\html-5.png" alt="skill">
-                <p>HTML</p>
-            </div>
-            <div class="skill">
-                <img src="src\iconos\css-3.png" alt="skill">
-                <p>CSS</p>
-            </div>
-            <div class="skill">
-                <img src="src\iconos\js.png" alt="skill">
-                <p>JS</p>
-            </div>
-            <div class="skill">
-                <img src="src\iconos\nodo-js.png" alt="skill">
-                <p>NODE.JS</p>
-            </div>
-            <div class="skill">
-                <img src="src\iconos\mdb.png" alt="skill">
-                <p>MDB</p>
-            </div>
-            <div class="skill">
-                <img src="src\iconos\piton.png" alt="skill">
-                <p>Python</p>
-            </div>
-        </div>
-    </section>
-    <section class="works">
-        <h2>Works</h2>
-        <div class="works-content" >
-            <div class="work">
-                <img src="" alt="work">
-                <p><a >Musci React</a></p>
-            </div>
-            <div class="work">
-                <img src="./src/works/uni.png" alt="work">
-                <p>Universiti Plataform</p>
-            </div>
-            <div class="work">
-                <img src="" alt="work">
-                <p>Web Landing</p>
-            </div>
-            <div class="work">
-                <img src="" alt="work">
-                <p>Message Web</p>
-            </div>
-            <div class="work">
-                <img src="" alt="work">
-                <p>Convert WebApp</p>
-            </div>
-            <div class="work">
-                <img src="" alt="work">
-                <p>Youtube DownLoad</p>
-            </div>
-    </section>
-    <section class="coments">
-        <h2>Coments</h2>
-        <div class="coments-content">
-            <div class="coment">
-                <img src="" alt="coment">
-                <p>Coment 1</p>
-            </div>
-            <div class="coment">
-                <img src="" alt="coment">
-                <p>Coment 2</p>
-            </div>
-            <div class="coment">
-                <img src="" alt="coment">
-                <p>Coment 3</p>
-            </div>
-        </div>
-    </section>
-    <footer class="contact">
-        <div class="formulario">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-            <ul class="redes">
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Linkedin</a></li>
-            </ul>
-            <form action="">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                <input type="submit" value="Send">
-            </form>
-        </div>
-    </footer>
-</body>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
